@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
       function send_handle() {
-        const num = document.getElementById("phone").value;
+        const num = document.getElementById("phone").getAttribute("href");
         const msg = document.getElementById("note").value;
         const name = document.getElementById("firstName").value;
 
-        const win = window.open(`https://wa.me/${num}?text=I%27m%20api%20msg%20hello%20${name}%20${msg}`, '_blank');
+        const win = window.open(`https://wa.me/${num}?text=Hello%20 I%27m%20${name}%20${msg}`, '_blank');
         // win.focus();
       }
     </script>
