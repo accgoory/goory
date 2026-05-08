@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>
       function send_handle() {
-        const num = document.getElementById("phone").getAttribute("href");
+        const num = document.getElementById("phone").value;
         const msg = document.getElementById("note").value;
         const name = document.getElementById("firstName").value;
 
-        const win = window.open(`https://wa.me/${num}?text=Hello%20 I%27m%20${name}%20${msg}`, '_blank');
+        const win = window.open(`https://wa.me/6281337915700?text=Hello%20 I%27m%20${name}%20${msg}`, '_blank');
+        // const win = window.open(`https://wa.me/${num}?text=Hello%20 I%27m%20${name}%20${msg}`, '_blank');
         // win.focus();
       }
     </script>
